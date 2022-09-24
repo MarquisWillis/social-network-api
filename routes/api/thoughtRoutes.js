@@ -21,10 +21,7 @@ router
     .put(updateThought)
     .delete(deleteThought)
 
-// route for adding reactions on specified thought with thoughtId
-router.route('/:thoughtId/reactions').post(addReaction);
-
 // route for removing reactions from specified thought with thoughtId
-router.route('/:thoughtId/reactions/:reactionId').delete(removeReaction);
+router.route('/:thoughtId/reactions').post(addReaction).delete(removeReaction);
 
 module.exports = router;

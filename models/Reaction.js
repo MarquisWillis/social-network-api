@@ -3,6 +3,9 @@ const { Schema, Types } = require('mongoose');
 // subdocument required for thought responses. includes:
 /*
     - reaction id to be created
+    - reactionBody
+    - username of user who created the reaction
+    - createdAt (defaults to current time at creation)
  */
 const reactionSchema = new Schema(
     {

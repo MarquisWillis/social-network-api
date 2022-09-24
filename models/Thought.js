@@ -1,6 +1,5 @@
 const { Schema, model } = require('mongoose');
 const reactionSchema = require('./Reaction');
-const User = require('./User');
 
 // new schema for thuoght, which includes:
 /*
